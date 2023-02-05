@@ -31,7 +31,12 @@
             checkbox.name = "name";
             checkbox.value = "value";
             checkbox.id = "id";
-            //add hour and minute to date
+
+            if (taskValue === "") {
+                alert("You must write something!");
+                return;
+            }
+
             var date = new Date();
             var dateText = document.createTextNode(" " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
             dateText.id = "dateText";
