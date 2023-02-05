@@ -39,8 +39,8 @@
 
             checkbox.addEventListener('click', function () {
                 setTimeout(function () {
-                    taskDiv.classList.add("fade-out");
-                    checkbox.classList.add("fade-out");
+                    container.removeChild(checkbox);
+                    container.removeChild(taskDiv);
                 }, 400);
 
             });
