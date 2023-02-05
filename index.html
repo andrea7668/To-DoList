@@ -8,13 +8,12 @@
     </head>
 
     <body>
-        <h2 id="pageTitle">To Do List</h2>
+        <h2 id="pageTitle">To-Do List</h2>
         <div class="container">
             <div class="task">
                 <input type="text" name="task" id="task" placeholder="Enter a task">
                 <input type="button" name="submit" id="submit" value="Add Task">
             </div>
-        </div>
     </body>
 
     <script>
@@ -32,9 +31,15 @@
             checkbox.name = "name";
             checkbox.value = "value";
             checkbox.id = "id";
+            //add hour and minute to date
+            var date = new Date();
+            var dateText = document.createTextNode(" " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
+            dateText.id = "dateText";
+            taskDiv.appendChild(dateText);
             container.appendChild(checkbox);
             taskDiv.appendChild(taskText);
             container.appendChild(taskDiv);
+            taskDiv.appendChild(dateText);
             task.value = "";
 
             checkbox.addEventListener('click', function () {
