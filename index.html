@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<lang="en">
+    <html>
+
+    <head>
+        <title>To Do List</title>
+        <link rel="stylesheet" href="css\style.css">
+    </head>
+
+    <body>
+        <h2 id="pageTitle">To Do List</h2>
+        <div class="container">
+            <div class="task">
+                <input type="text" name="task" id="task" placeholder="Enter a task">
+                <input type="button" name="submit" id="submit" value="Add Task">
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var container = document.querySelector('.container');
+
+        submit.addEventListener('click', function () {
+            var checkbox = document.createElement('input');
+            var task = document.getElementById('task');
+            var taskValue = task.value;
+            var taskDiv = document.createElement('div');
+            var taskText = document.createTextNode(taskValue);
+            taskDiv.id = "taskDiv";
+
+            checkbox.type = "checkbox";
+            checkbox.name = "name";
+            checkbox.value = "value";
+            checkbox.id = "id";
+            container.appendChild(checkbox);
+            taskDiv.appendChild(taskText);
+            container.appendChild(taskDiv);
+            task.value = "";
+
+            checkbox.addEventListener('click', function () {
+                setTimeout(function () {
+                    taskDiv.classList.add("fade-out");
+                    checkbox.classList.add("fade-out");
+                }, 400);
+
+            });
+        });
+    </script>
+
+    </html>

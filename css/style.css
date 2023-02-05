@@ -1,0 +1,87 @@
+body {
+    background-color: fff;
+    color: #000;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    left: 820px;
+    top: 100px;
+    width: 400px;
+    height: 400px;
+}
+
+#id {
+    position: relative;
+    top: 17px;
+    right: 20px;
+}
+
+#pageTitle {
+    position: absolute;
+    left: 855px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.fade-out {
+    animation: fadeOut ease 3s;
+    -webkit-animation: fadeOut ease 3s;
+    -moz-animation: fadeOut ease 3s;
+    -o-animation: fadeOut ease 3s;
+    -ms-animation: fadeOut ease 3s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
