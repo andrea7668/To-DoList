@@ -9,7 +9,7 @@ body {
 
 .container {
     position: relative;
-    left: 820px;
+    left: 650px;
     top: 100px;
     width: 400px;
     height: 400px;
@@ -23,65 +23,15 @@ body {
 
 #pageTitle {
     position: absolute;
-    left: 855px;
+    left: 670px;
     font-size: 30px;
     font-family: Verdana, Geneva, sans-serif;
 }
 
-.fade-out {
-    animation: fadeOut ease 3s;
-    -webkit-animation: fadeOut ease 3s;
-    -moz-animation: fadeOut ease 3s;
-    -o-animation: fadeOut ease 3s;
-    -ms-animation: fadeOut ease 3s;
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@-o-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@-ms-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
+#submit {
+    position: relative;
+    left: 60px;
+    top: 0px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }

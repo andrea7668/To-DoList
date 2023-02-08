@@ -3,58 +3,22 @@
     <html>
 
     <head>
-        <title>To Do List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css\style.css">
+        <title>To Do List</title>
     </head>
+
 
     <body>
         <h2 id="pageTitle">To-Do List</h2>
         <div class="container">
             <div class="task">
-                <input type="text" name="task" id="task" placeholder="Enter a task">
-                <input type="button" name="submit" id="submit" value="Add Task">
+                <input type="button" name="submit" id="submit" value="Add Task"> <br> <br>
             </div>
+        </div>
     </body>
 
-    <script>
-        var container = document.querySelector('.container');
-
-        submit.addEventListener('click', function () {
-            var checkbox = document.createElement('input');
-            var task = document.getElementById('task');
-            var taskValue = task.value;
-            var taskDiv = document.createElement('div');
-            var taskText = document.createTextNode(taskValue);
-            taskDiv.id = "taskDiv";
-
-            checkbox.type = "checkbox";
-            checkbox.name = "name";
-            checkbox.value = "value";
-            checkbox.id = "id";
-
-            if (taskValue === "") {
-                alert("You must write something!");
-                return;
-            }
-
-            var date = new Date();
-            var dateText = document.createTextNode(" " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
-            dateText.id = "dateText";
-            taskDiv.appendChild(dateText);
-            container.appendChild(checkbox);
-            taskDiv.appendChild(taskText);
-            container.appendChild(taskDiv);
-            taskDiv.appendChild(dateText);
-            task.value = "";
-
-            checkbox.addEventListener('click', function () {
-                setTimeout(function () {
-                    container.removeChild(checkbox);
-                    container.removeChild(taskDiv);
-                }, 400);
-
-            });
-        });
-    </script>
-
+    <script src="js/script.js"></script>
+    
     </html>
