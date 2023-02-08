@@ -1,7 +1,9 @@
 var container = document.querySelector('.container'); //get the container div from the DOM
 
 document.getElementById('submit').addEventListener('click', function () { //add an event listener to the submit button
-    var newWindow = window.open('addTask.html', 'newWindow', 'width=600, height=400'); //open a new window and set the width and height of the window
+    var left = (screen.width / 2) - (600 / 2); //set the left position of the new window
+    var top = (screen.height / 2) - (800 / 2); //set the top position of the new window
+    newWindow = window.open('addTask.html', 'newWindow', 'width=600, height=400, top=' + top + ', left=' + left); //create the window
 
     newWindow.document.write('<h2>Add Task</h2>'); //add a title to the new window
     newWindow.document.write('<input type="text" name="task" id="task" placeholder="Enter Task">'); //add a text input to the new window
